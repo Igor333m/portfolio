@@ -40,6 +40,10 @@ body {
 }
 
 /* Image backgrounds */
+.images {
+	display: inline-block;
+}
+
 .redBackground {
 	background-color: rgb(255, 76, 76);
 }
