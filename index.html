@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 title-logo"><img src="img/logo.png" alt="Logo"></div>
+      <div class="col-sm-9 main-title text-uppercase">
+        <h1 class="title text-muted text-thin">Igor Todorovic</h1>
+        <h3>Front-end Ninja</h3>
+      </div>
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <article class="row">
+      <div class="col-md-12">
+        <img src="img/river_forest_castle.jpg" alt="image of forest and river" class="img-responsive center-block">
+      </div>
+      <div class="col-md-12">
+        <h2 class="text-muted text-thin" id="media-center">Featured Work</h2>
+        <hr>
+      </div>
+    </article>
+
+    <section class="row text-center">
+      <article class="col-md-6">
+        <img src="img/lake.jpg" alt="lake" class="img-responsive center-block" data-toggle="modal" data-target="#lake">
+        <h3>Famous Lake</h3>
+        <p><a href="#">Link to project</a></p>
+      </article>
+      <article class="col-md-6">
+        <img src="img/mountain.jpg" alt="mountain" class="img-responsive center-block" data-toggle="modal" data-target="#mountain">
+        <h3>Mountain Lake</h3>
+        <p><a href="#">Link to project</a></p>
+      </article>
+      <article class="col-md-6">
+        <img src="img/bokeh.jpeg" alt="blurry dots" class="img-responsive center-block" data-toggle="modal" data-target="#bokeh">
+        <h3>Nice warm bokeh</h3>
+        <p><a href="#">Link to project</a></p>
+      </article>
+      <article class="col-md-6">
+        <img src="img/zermatt.jpg" alt="zermatt, swiss village" class="img-responsive center-block" data-toggle="modal" data-target="#village">
+        <h3>Swiss village</h3>
+        <p><a href="#">Link to project</a></p>
+      </article>
+    </section>
+  </main>
+
+<!-- Modals -->
+<!-- Lake modal -->
+  <div class="modal fade" id="lake" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Famous lake, who knows where!</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/lake.jpg" alt="lake">This was my first project in this class. I learned a lot about HTML and CSS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Mountain modal -->
+  <div class="modal fade" id="mountain" tabindex="-1" role="dialog" aria-labelledby="mountainLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="mountainLabel">Famous mountain lake, who knows where!</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/mountain.jpg" alt="mountain">This was my second project in this class. I learned a lot about HTML and CSS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bokeh modal -->
+  <div class="modal fade" id="bokeh" tabindex="-1" role="dialog" aria-labelledby="bokehLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="bokehLabel">Very warm bokeh.</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/bokeh.jpeg" alt="bokeh apstract">This was my third project in this class. I learned a lot about HTML and CSS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- zermatt modal -->
+  <div class="modal fade" id="village" tabindex="-1" role="dialog" aria-labelledby="villageLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="villageLabel">Zermatt village in Switzerland</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/zermatt.jpg" alt="Zermatt village">This was my fourth project in this class. I learned a lot about HTML and CSS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+  

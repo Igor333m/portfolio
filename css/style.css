@@ -1,0 +1,42 @@
+body {
+	font-family: "Lato", sans-serif;
+	color: #747784;
+	font-weight: 300;
+}
+
+.text-muted {
+	color: #bcbbbb;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.title-logo {
+	padding-top: 5px;
+}
+
+.main-title {
+	text-align: right;
+}
+
+.title {
+	font-size: 5rem;
+}
+
+@media only screen and (min-width: 1180px)  {
+	#media-center {
+		text-align: center;
+}
+
+@media only screen and (max-width: 770px) {
+	.main-title, .title-logo {
+		text-align: center;
+	}
+	.title + h3 {
+		font-size: 1.5rem;
+	}
+	.main-title > h1 {
+		font-size: 3.5rem;
+	}
+}
