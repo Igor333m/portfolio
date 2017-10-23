@@ -42,27 +42,74 @@ body {
 /* Image backgrounds */
 .images {
 	display: inline-block;
+
+}
+
+.images * {
+	transition: all 0.5s ease-in-out;
+}
+
+i {
+	position: absolute;
+	top: 23%;
+	left: 23%;
 }
 
 .redBackground {
 	background-color: rgb(255, 76, 76);
 }
 
+.redBackground i {
+	color: rgb(255, 76, 76);
+}
+
 .blueBackground {
 	background-color: rgb(76, 103, 255);
+}
+
+.blueBackground i {
+	color: rgb(76, 103, 255);
 }
 
 .orangeBackground {
 	background-color: rgb(255, 216, 76);
 }
 
+.orangeBackground i {
+	color: rgb(255, 216, 76);
+}
+
 .blackBackground {
 	background-color: #515151;
 }
 
-.images:hover img{
-	opacity:0.3; 
+.blackBackground i {
+	color: #515151;
 }
+
+.images:hover img{
+	filter: grayscale(100%);
+	opacity:0.4;
+}
+
+/* Fa fa circle on top of images */
+.imgCircle {
+	position: absolute;
+	top: 30%;
+	left: 46%;
+	background-color: white;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	transform: scale(0);
+
+}
+
+.images:hover .imgCircle {
+	transform: scale(1);
+}
+
+
 
 @media only screen and (min-width: 1180px)  {
 	#media-center {
